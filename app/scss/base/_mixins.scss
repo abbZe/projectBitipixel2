@@ -1,0 +1,57 @@
+///////////////////////////////////////
+//            Breakpoints            //
+///////////////////////////////////////
+
+$breakpoints: (
+	mobile: 375px,
+	tablet: 600px,
+	desktop: 1000px,
+	largeDesktop: 1800px
+);
+
+//--- MOBILE FIRST
+
+@mixin atMobileU {
+	@media (min-width: map-get($breakpoints, mobile)){
+		@content;
+	}
+};
+
+@mixin atTabletU {
+	@media (min-width: map-get($breakpoints, tablet)){
+		@content;
+	}
+};
+
+@mixin atDesktopU {
+	@media (min-width: map-get($breakpoints, desktop)){
+		@content;
+	}
+};
+
+@mixin atLargeDesktopU {
+	@media (min-width: map-get($breakpoints, largeDesktop)){
+		@content;
+	}
+};
+
+
+///////////////////////////////////////
+//            User-Mixins            //
+///////////////////////////////////////
+
+@mixin link--chevrone {
+	&::after {
+		//--- Box model
+		margin-left: 18px;
+
+		//--- Visual
+		content: '\f054';
+
+		//--- Typography
+		font: var(--fa-font-solid);
+		font-size: 25px;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+	}
+}

@@ -1,0 +1,209 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Unbounded", cursive;
+  color: #f1f1f1;
+  font-size: 4.75vw;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.button {
+  border: none;
+  background-color: none;
+}
+
+@media (min-width: 1000px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  display: none !important;
+}
+@media (min-width: 1000px) {
+  .desktop-only {
+    display: initial !important;
+  }
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.main-header .logo {
+  font-family: "Press Start 2P", cursive;
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.button__light-theme,
+.button__dark-theme,
+.button__hamburger {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color: #e1e1e1;
+  color: #1a1a1a;
+}
+
+.button__dark-theme::before {
+  position: absolute;
+  top: calc(50% - 0.38rem);
+  right: calc(50% - 0.3rem);
+  display: inline-block;
+  font: var(--fa-font-solid);
+  font-size: 0.8rem;
+  content: "\f186";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button__light-theme::before {
+  position: absolute;
+  top: calc(50% - 0.4rem);
+  right: calc(50% - 0.4rem);
+  display: inline-block;
+  font: var(--fa-font-solid);
+  font-size: 0.8rem;
+  content: "\f185";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button__hamburger::before {
+  position: absolute;
+  top: calc(50% - 0.4rem);
+  right: calc(50% - 0.36rem);
+  display: inline-block;
+  font: var(--fa-font-solid);
+  font-size: 0.8rem;
+  content: "\f0c9";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.active {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
