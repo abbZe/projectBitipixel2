@@ -1,0 +1,63 @@
+.title-left {
+	// Positioning
+	position: relative;
+
+	// Box model
+	width: 100vw;
+
+	// Visual
+	background-color: $white;
+
+	// Typography
+	font-family: $titleFont;
+	font-size: 1rem;
+	font-weight: 400;
+
+	&::after {
+		// Positioning
+		position: absolute;
+		top: 0.5em;
+		right: 0;
+
+		// Box model
+		width: 4.5rem;
+		height: 0.1em;
+		margin-right: 1rem;
+		
+		// Visual
+		background-color: $black;
+		content: "";
+	}
+}
+
+.title-right {
+	// Positioning
+	position: relative;
+
+	// Box model
+	width: 100vw;
+
+	// Visual
+	background-color: $white;
+
+	// Typography
+	font-family: $titleFont;
+	font-size: 1rem;
+	font-weight: 400;
+
+	&::after {
+		// Positioning
+		position: absolute;
+		top: 0.5em;
+		right: 0;
+
+		// Box model
+		width: 4.5rem;
+		height: 0.1em;
+		margin-right: 1rem;
+		
+		// Visual
+		background-color: $black;
+		content: "";
+	}
+}

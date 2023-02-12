@@ -1,0 +1,27 @@
+.hero-desktop {
+	// Positioning
+	position: relative;
+
+	// Box model
+	padding-inline: $defaultPadding;
+}
+
+.hero-desktop__video {
+	// Box model
+	border-radius: 0.5rem;
+}
+
+.hero-desktop__title {
+	// Box model
+	padding-left: $defaultPadding;
+
+	// Positioning
+	position: absolute;
+	top: calc(50% - 5rem);
+	left: 0;
+
+	// Typography
+	font-family: $titleFont;
+	color: $white;
+	font-size: 0.6rem;
+}

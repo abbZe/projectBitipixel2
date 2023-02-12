@@ -57,7 +57,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -69,20 +68,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
 }
 
 table {
@@ -120,6 +105,7 @@ html {
 }
 
 .main-header {
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,15 +116,32 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #ececec;
 }
 
-.main-header .logo {
+.main-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-header__logo .logo {
+  padding-top: 0.2rem;
   font-family: "Press Start 2P", cursive;
   color: #1a1a1a;
   font-size: 1.3rem;
   line-height: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-header__title {
+  font-size: 0.4rem;
 }
 
 .main-header__buttons {
@@ -160,7 +163,7 @@ html {
   position: relative;
   border: none;
   border-radius: 50%;
-  padding: 0.8rem;
+  padding: 1rem;
   background-color: #e1e1e1;
   color: #1a1a1a;
 }
@@ -209,6 +212,100 @@ html {
   color: #f1f1f1;
 }
 
-.hero {
-  padding: 0.5rem;
+.hero-desktop {
+  position: relative;
+  padding-inline: 0.5rem;
+}
+
+.hero-desktop__video {
+  border-radius: 0.5rem;
+}
+
+.hero-desktop__title {
+  padding-left: 0.5rem;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: 0;
+  font-family: "Press Start 2P", cursive;
+  color: #f1f1f1;
+  font-size: 0.6rem;
+}
+
+.about {
+  padding-inline: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.about__title {
+  margin-bottom: 0.5rem;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+.about__content img {
+  width: 100vw;
+}
+
+.about__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.about__text-container p {
+  font-size: 0.7em;
+}
+
+.about__text2 {
+  text-align: right;
+}
+
+.title-left {
+  position: relative;
+  width: 100vw;
+  background-color: #f1f1f1;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.title-left::after {
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  width: 4.5rem;
+  height: 0.1em;
+  margin-right: 1rem;
+  background-color: #1a1a1a;
+  content: "";
+}
+
+.title-right {
+  position: relative;
+  width: 100vw;
+  background-color: #f1f1f1;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.title-right::after {
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  width: 4.5rem;
+  height: 0.1em;
+  margin-right: 1rem;
+  background-color: #1a1a1a;
+  content: "";
 }

@@ -1,0 +1,40 @@
+.about {
+	// Box model
+	padding-inline: $defaultPadding;
+	padding-bottom: 1rem;
+}
+
+.about__title {
+	// Box model
+	margin-bottom: 0.5rem;
+}
+
+.about__content {
+	// Box model
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	img {
+		// Box model
+		width: 100vw;
+	}
+}
+
+.about__text-container {
+	// Box model
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.about__text-container p {
+	// Typography
+	font-size: 0.7em;
+}
+
+.about__text2 {
+	// Typography
+	text-align: right;
+}
+
