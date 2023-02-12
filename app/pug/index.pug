@@ -1,18 +1,11 @@
-doctype html
-html(lang="ru")
-	head
-		include ./modules/_head.pug
-
-		title Главная:
+//--- index.pug => index.html
+extends ./layouts/layout.pug
 
 
-	body
-		include ./modules/_main-header.pug
-		include ./modules/_mobile-nav.pug
+block vars 
+	- var title = `Главная`;
+	- var description = `Сайт музея компьютерных игр Bitipixel`;
 
 
-		include ./modules/_main-footer.pug
-
-	script(src="../js/main.min.js") 
-
-
+block content
+	include ./modules/_hero.pug

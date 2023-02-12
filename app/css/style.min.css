@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Unbounded:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,7 +12,7 @@ body {
           box-sizing: inherit;
 }
 
-img {
+img, video {
   max-width: 100%;
   display: block;
 }
@@ -90,7 +92,7 @@ table {
 
 html {
   font-family: "Unbounded", cursive;
-  color: #f1f1f1;
+  color: #1a1a1a;
   font-size: 4.75vw;
   background-color: #f1f1f1;
   overflow-x: hidden;
@@ -127,7 +129,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
   padding: 0.5rem;
 }
 
@@ -206,4 +207,8 @@ html {
 .active {
   background-color: #1a1a1a;
   color: #f1f1f1;
+}
+
+.hero {
+  padding: 0.5rem;
 }

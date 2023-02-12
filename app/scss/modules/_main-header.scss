@@ -1,14 +1,13 @@
 .main-header {
-	//--- Box model
+	// Box model
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
-	padding: 0.5rem;
+	padding: $defaultPadding;
 }
 
 .main-header .logo {
-	//--- Typography
+	// Typography
 	font-family: $titleFont;
 	color: $black;
 	font-size: 1.3rem;
@@ -18,7 +17,7 @@
 }
 
 .main-header__buttons {
-	//--- Box model
+	// Box model
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -28,33 +27,33 @@
 .button__light-theme,
 .button__dark-theme,
 .button__hamburger {
-	//--- Positioning
+	// Positioning
 	position: relative;
 
-	//--- Box model
+	// Box model
 	border: none;
 	border-radius: 50%;
 	padding: 0.8rem;
 
-	//--- Visual
+	// Visual
 	background-color: $lightGray;
 	color: $black;
 }
 
 .button__dark-theme::before {
-	//--- Positioning
+	// Positioning
 	position: absolute;
 	top: calc(50% - 0.38rem);
 	right: calc(50% - 0.3rem);
 
-	//--- Box model
+	// Box model
 	display: inline-block;
 
-	//--- Typography
+	// Typography
 	font: var(--fa-font-solid);
 	font-size: 0.8rem;
 
-	//--- Visual
+	// Visual
 	content: "\f186";
 	cursor: pointer;
 	text-rendering: auto;
@@ -62,19 +61,19 @@
 }
 
 .button__light-theme::before {
-	//--- Positioning
+	// Positioning
 	position: absolute;
 	top: calc(50% - 0.4rem);
 	right: calc(50% - 0.4rem);
 
-	//--- Box model
+	// Box model
 	display: inline-block;
 
-	//--- Typography
+	// Typography
 	font: var(--fa-font-solid);
 	font-size: 0.8rem;
 
-	//--- Visual
+	// Visual
 	content: "\f185";
 	cursor: pointer;
 	text-rendering: auto;
@@ -82,19 +81,19 @@
 }
 
 .button__hamburger::before {
-	//--- Positioning
+	// Positioning
 	position: absolute;
 	top: calc(50% - 0.4rem);
 	right: calc(50% - 0.36rem);
 
-	//--- Box model
+	// Box model
 	display: inline-block;
 
-	//--- Typography
+	// Typography
 	font: var(--fa-font-solid);
 	font-size: 0.8rem;
 
-	//--- Visual
+	// Visual
 	content: "\f0c9";
 	cursor: pointer;
 	text-rendering: auto;
@@ -102,7 +101,7 @@
 }
 
 .active {
-	//--- Visual
+	// Visual
 	background-color: $black;
 	color: $white;
 }

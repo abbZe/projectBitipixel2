@@ -6,18 +6,14 @@
 @import "./base/mixins";
 @import "./base/globals";
 
+//--- Fonts
+@import "./fonts/fonts";
+
 //--- Modules
-//------ Main header
 @import "./modules/main-header";
 @import "./modules/mobile-nav";
-
-//------ Hero
-
-//------ Sections
-
-//------ Footer
+@import "./modules/hero";
 @import "./modules/main-footer";
 
 //------ Elements
 @import "./modules/title";
-

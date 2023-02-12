@@ -12,7 +12,7 @@ body {
 }
 
 // Make images easier tor work with
-img {
+img, video {
 	//--- Box model
 	max-width: 100%;
 	display: block;
