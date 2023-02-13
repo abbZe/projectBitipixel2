@@ -695,5 +695,38 @@ html {
 }
 
 body.dark-theme a {
+  color: #f1f1f1 !important;
+}
+
+body.dark-theme .title-right,
+body.dark-theme .title-left {
+  background-color: #1a1a1a !important;
+}
+body.dark-theme .title-right::after,
+body.dark-theme .title-left::after {
+  background-color: #f1f1f1 !important;
+}
+
+body.dark-theme .main-header,
+body.dark-theme .main-footer {
+  background-color: #262626;
+}
+
+body.dark-theme .active-button {
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+}
+
+body.dark-theme .button__light-theme,
+body.dark-theme .button__hamburger {
+  background-color: #1a1a1a;
   color: #f1f1f1;
+}
+
+body.dark-theme .mobile-nav {
+  background-color: #1a1a1a;
+}
+
+body.dark-theme .main-footer .main-footer__socials-item a {
+  background-color: #1a1a1a;
 }
