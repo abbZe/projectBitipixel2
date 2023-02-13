@@ -1,6 +1,8 @@
 .main-header {
 	// Positioning
 	position: sticky;
+	top: 0;
+	z-index: 99;
 
 	// Box model
 	display: flex;
@@ -69,7 +71,7 @@
 
 	// Typography
 	font: var(--fa-font-solid);
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 
 	// Visual
 	content: "\f186";
@@ -85,7 +87,7 @@
 
 	// Typography
 	font: var(--fa-font-solid);
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 
 	// Visual
 	content: "\f185";
@@ -101,7 +103,7 @@
 
 	// Typography
 	font: var(--fa-font-solid);
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 
 	// Visual
 	content: "\f0c9";
@@ -114,4 +116,7 @@
 	// Visual
 	background-color: $black;
 	color: $white;
+
+	// Typography
+	font-size: 1.1rem;
 }

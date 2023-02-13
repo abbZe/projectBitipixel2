@@ -76,6 +76,7 @@ table {
 }
 
 html {
+  position: relative;
   font-family: "Unbounded", cursive;
   color: #1a1a1a;
   font-size: 4.75vw;
@@ -104,6 +105,10 @@ html {
   background-color: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 1000px) {
   .mobile-only {
     display: none !important;
@@ -121,6 +126,8 @@ html {
 
 .main-header {
   position: sticky;
+  top: 0;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +196,7 @@ html {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   content: "\f186";
   cursor: pointer;
   text-rendering: auto;
@@ -202,7 +209,7 @@ html {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   content: "\f185";
   cursor: pointer;
   text-rendering: auto;
@@ -215,7 +222,7 @@ html {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   content: "\f0c9";
   cursor: pointer;
   text-rendering: auto;
@@ -225,6 +232,42 @@ html {
 .active-button {
   background-color: #1a1a1a;
   color: #f1f1f1;
+  font-size: 1.1rem;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 50;
+  width: 100%;
+  border-bottom-left-radius: 30%;
+  background-color: #f1f1f1;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.mobile-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-top: 4.5rem;
+  list-style: none;
+  line-height: 3rem;
+}
+
+.mobile-nav__item a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .hero-desktop {
