@@ -14,12 +14,12 @@ html {
 
 	@include atTabletU {
     // typography
-    font-size: 4vw;
+    font-size: 4.75vw;
   }
 
   @include atDesktopU {
     // typography
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   @include atLargeDesktopU {
@@ -52,6 +52,6 @@ html {
 
 	@include atDesktopU {
 		// Box model
-		display: initial !important;
+		display: block !important;
 	}
 }

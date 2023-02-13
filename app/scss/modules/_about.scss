@@ -20,6 +20,16 @@
 		width: 100vw;
 		border-radius: 0.4rem;
 	}
+	@include atDesktopU {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.about__content img {
+	@include atDesktopU {
+		width: 50%;
+	}
 }
 
 .about__text-container {
@@ -27,15 +37,30 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 0.5rem;
+
+	@include atDesktopU {
+		flex-direction: column;
+		width: 40vw;
+		gap: 1rem;
+	}
 }
 
 .about__text-container p {
 	// Typography
 	font-size: 0.7em;
+
+	@include atDesktopU {
+		font-size: 1rem;
+		line-height: 1rem;
+	}
 }
 
 .about__text2 {
 	// Typography
 	text-align: right;
+
+	@include atDesktopU {
+		text-align: left;
+	}
 }
 

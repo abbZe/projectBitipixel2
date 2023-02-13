@@ -12,6 +12,9 @@
 .gallery__title.title-right::after {
 	// Box model
 	width: 11.5rem;
+	@include atDesktopU {
+		width: 35rem;
+	}
 }
 
 .gallery__switcher {
@@ -19,6 +22,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+
+	@include atDesktopU {
+		gap: 0.5rem;
+	}
 }
 
 .previews-list {
@@ -29,6 +36,12 @@
 
 	// Typography
 	list-style: none;
+
+	@include atDesktopU {
+		// Box model
+		gap: 0.5rem;
+		flex-wrap: nowrap;
+	}
 }
 
 .preview-item {
@@ -50,6 +63,12 @@
 	content: '';
 	background-color: $white;
 	opacity: 0.6;
+
+	@include atDesktopU {
+		// Box model
+		width: 7rem;
+		height: 4rem;
+	}
 }
 
 .preview-item.active-preview::after {
@@ -62,6 +81,11 @@
 	width: 2rem;
 	height: 1rem;
 	border-radius: 0.2rem;
+
+	@include atDesktopU {
+		width: 7rem;
+		height: 4rem;
+	}
 }
 
 .gallery__active-photo {

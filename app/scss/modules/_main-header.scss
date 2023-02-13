@@ -1,7 +1,7 @@
 .main-header {
 	// Positioning
 	position: sticky;
-	top: 0;
+	top: -1px;
 	z-index: 99;
 
 	// Box model
@@ -25,7 +25,6 @@
 	// Box model
 	padding-top: 0.2rem; // empty space under font compensation
 
-
 	// Typography
 	font-family: $titleFont;
 	color: $black;
@@ -33,11 +32,20 @@
 	line-height: 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
+
+	@include atDesktopU {
+		font-size: 1.5rem;
+	}
 }
 
 .main-header__title {
 	// Typography
 	font-size: 0.4rem;
+
+	@include atDesktopU {
+		// Typography
+		font-size: 0.7rem;
+	}
 }
 
 .main-header__buttons {
@@ -69,6 +77,9 @@
 	position: absolute;
 	transform: translate(-50%, -50%);
 
+	// Box model
+	padding: 0.5rem;
+
 	// Typography
 	font: var(--fa-font-solid);
 	font-size: 0.9rem;
@@ -84,6 +95,9 @@
 	// Positioning
 	position: absolute;
 	transform: translate(-50%, -50%);
+
+		// Box model
+		padding: 0.5rem;
 
 	// Typography
 	font: var(--fa-font-solid);
@@ -101,6 +115,9 @@
 	position: absolute;
 	transform: translate(-50%, -50%);
 
+		// Box model
+		padding: 0.5rem;
+
 	// Typography
 	font: var(--fa-font-solid);
 	font-size: 0.9rem;
@@ -116,7 +133,4 @@
 	// Visual
 	background-color: $black;
 	color: $white;
-
-	// Typography
-	font-size: 1.1rem;
 }

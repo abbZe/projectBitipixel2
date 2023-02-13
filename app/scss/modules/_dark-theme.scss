@@ -1,4 +1,12 @@
-.contacts iframe.map-dark-mode {
+.dark-theme {
+	// Typography
+	color: $white !important;
+
 	// Visual
-	filter: invert(90%)
+	background-color: $black !important;
+}
+
+body.dark-theme a {
+	// Visual
+	color: $white;
 }

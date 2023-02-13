@@ -1,28 +1,26 @@
 .hero-desktop {
-	// Positioning
-	position: relative;
-
 	// Box model
 	padding-inline: $defaultPadding;
 	margin-bottom: $defaultMargin;
 }
 
-.hero-desktop__video {
+.hero__container {
 	// Box model
-	border-radius: 0.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.hero-desktop video {
+	// Box model
+	width: 50%;
+	border-radius: 0.4rem;
 }
 
 .hero-desktop__title {
-	// Box model
-	padding-left: $defaultPadding;
-
-	// Positioning
-	position: absolute;
-	top: calc(50% - 5rem);
-	left: 0;
-
 	// Typography
-	font-family: $titleFont;
-	color: $white;
-	font-size: 0.6rem;
+	text-align: right;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
 }
