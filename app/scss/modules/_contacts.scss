@@ -1,0 +1,85 @@
+.contacts {
+	// Box model
+	padding-inline: $defaultPadding;
+}
+
+.contacts__title {
+	// Box model
+	margin-bottom: 0.5rem;
+}
+
+.contacts__subtitle {
+	// Box model
+	margin-bottom: 0.5rem;
+
+	// Typography
+	font-size: 0.5rem;
+}
+
+.contacts__content {
+	// Positioning
+	position: relative;
+}
+
+.contacts__image {
+	// Box model
+	width: 100%;
+	height: auto;
+	border-radius: 0.4rem;
+
+	// Visual
+	transform: scaleX(-1);
+}
+
+
+.contacts__list {
+	// Positioning
+	position: absolute;
+	top: 50%;
+	left: 0.5rem;
+	transform: translate(0, -50%);
+
+	// Box model
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__item {
+	// Box model
+	width: 33.3vw;
+
+	// Typography
+	list-style: none;
+	color: $white;
+}
+
+.contacts__item a {
+	// Typography
+	color: $white;
+	text-decoration: none;
+}
+
+.contacts__item:not(:last-child) {
+	// Box model
+	margin-bottom: 0.5rem;
+}
+
+.contacts__item h3 {
+	// Box model
+	margin-bottom: 0.25rem;
+
+	// Typography
+	font-size: 0.7rem;
+}
+
+.contacts__item p {
+	// Typography
+	font-size: 0.4em;
+	line-height: 1.3em;
+}
+
+.contacts iframe {
+	// Box model
+	width: 100%;
+	height: 30vh;
+}

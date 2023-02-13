@@ -83,6 +83,21 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+@media (min-width: 600px) {
+  html {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 1000px) {
+  html {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 2vw;
+  }
+}
 
 .button {
   border: none;
@@ -215,6 +230,7 @@ html {
 .hero-desktop {
   position: relative;
   padding-inline: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-desktop__video {
@@ -233,7 +249,7 @@ html {
 
 .about {
   padding-inline: 0.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about__title {
@@ -275,6 +291,7 @@ html {
 
 .gallery {
   padding-inline: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .gallery__title {
@@ -300,6 +317,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -334,6 +353,83 @@ html {
 .gallery__active-photo {
   width: 100vw;
   border-radius: 0.4rem;
+}
+
+.contacts {
+  padding-inline: 0.5rem;
+}
+
+.contacts__title {
+  margin-bottom: 0.5rem;
+}
+
+.contacts__subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 0.5rem;
+}
+
+.contacts__content {
+  position: relative;
+}
+
+.contacts__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.contacts__list {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__item {
+  width: 33.3vw;
+  list-style: none;
+  color: #f1f1f1;
+}
+
+.contacts__item a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.contacts__item h3 {
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+}
+
+.contacts__item p {
+  font-size: 0.4em;
+  line-height: 1.3em;
+}
+
+.contacts iframe {
+  width: 100%;
+  height: 30vh;
+}
+
+.main-footer {
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 
 .title-left {

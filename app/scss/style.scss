@@ -1,27 +1,22 @@
 @charset 'utf-8';
 
-
 //--- Base
 @import "./base/reset";
 @import "./base/vars";
 @import "./base/mixins";
 @import "./base/globals";
 
-
 //--- Fonts
 @import "./fonts/fonts";
-
 
 //--- Modules
 @import "./modules/main-header";
 @import "./modules/mobile-nav";
-
 @import "./modules/hero-desktop";
 @import "./modules/about";
 @import "./modules/gallery";
-
+@import "./modules/contacts";
 @import "./modules/main-footer";
-
 
 //------ Elements
 @import "./modules/title";

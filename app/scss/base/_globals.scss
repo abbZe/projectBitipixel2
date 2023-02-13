@@ -8,6 +8,21 @@ html {
 	background-color: $white;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+
+	@include atTabletU {
+    // typography
+    font-size: 4vw;
+  }
+
+  @include atDesktopU {
+    // typography
+    font-size: 3vw;
+  }
+
+  @include atLargeDesktopU {
+    // typography
+    font-size: 2vw;
+  }
 }
 
 .button {

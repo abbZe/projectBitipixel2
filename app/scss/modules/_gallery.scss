@@ -1,6 +1,7 @@
 .gallery {
 	// Box model
 	padding-inline: $defaultPadding;
+	margin-bottom: $defaultMargin;
 }
 
 .gallery__title {
@@ -23,6 +24,7 @@
 .previews-list {
 	// Box model
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	// Typography
