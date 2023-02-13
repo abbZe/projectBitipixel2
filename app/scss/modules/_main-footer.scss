@@ -2,8 +2,61 @@
 	// Box model
 	padding: $defaultPadding;
 	margin-top: $defaultMargin;
+	display: flex;
+	justify-content: center;
+
+	// Visual
+	background-color: #ececec;
 }
 
 .main-footer__socials-list {
-	
+	// Box model
+	display: flex;
+	gap: 0.5rem;
+	list-style: none;
+}
+
+.main-footer__socials-item a {
+	// Positioning
+	position: relative;
+
+	// Box model
+	display: block;
+	border: none;
+	border-radius: 50%;
+	padding: 1rem;
+
+	// Visual
+	background-color: $lightGray;
+	color: $black;
+}
+
+.main-footer__socials-item a::before {
+	// Positioning
+	position: absolute;
+	transform: translate(-50%, -50%);
+
+	// Typography
+	font: var(--fa-font-brands);
+	font-size: 1rem;
+
+	// Visual
+	cursor: pointer;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.main-footer__socials-item a.instagram::before {
+	// Visual
+	content: "\f16d";
+}
+
+.main-footer__socials-item a.vkontakte::before {
+	// Visual
+	content: "\f189";
+}
+
+.main-footer__socials-item a.youtube::before {
+	// Visual
+	content: "\f167";
 }

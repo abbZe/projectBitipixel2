@@ -185,9 +185,9 @@ html {
 
 .button__dark-theme::before {
   position: absolute;
-  top: calc(50% - 0.38rem);
-  right: calc(50% - 0.3rem);
-  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
   font-size: 0.8rem;
   content: "\f186";
@@ -198,9 +198,9 @@ html {
 
 .button__light-theme::before {
   position: absolute;
-  top: calc(50% - 0.4rem);
-  right: calc(50% - 0.4rem);
-  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
   font-size: 0.8rem;
   content: "\f185";
@@ -211,9 +211,9 @@ html {
 
 .button__hamburger::before {
   position: absolute;
-  top: calc(50% - 0.4rem);
-  right: calc(50% - 0.36rem);
-  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font: var(--fa-font-solid);
   font-size: 0.8rem;
   content: "\f0c9";
@@ -430,6 +430,55 @@ html {
 .main-footer {
   padding: 0.5rem;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ececec;
+}
+
+.main-footer__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.main-footer__socials-item a {
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #e1e1e1;
+  color: #1a1a1a;
+}
+
+.main-footer__socials-item a::before {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: var(--fa-font-brands);
+  font-size: 1rem;
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main-footer__socials-item a.instagram::before {
+  content: "\f16d";
+}
+
+.main-footer__socials-item a.vkontakte::before {
+  content: "\f189";
+}
+
+.main-footer__socials-item a.youtube::before {
+  content: "\f167";
 }
 
 .title-left {

@@ -65,11 +65,7 @@
 .button__dark-theme::before {
 	// Positioning
 	position: absolute;
-	top: calc(50% - 0.38rem);
-	right: calc(50% - 0.3rem);
-
-	// Box model
-	display: inline-block;
+	transform: translate(-50%, -50%);
 
 	// Typography
 	font: var(--fa-font-solid);
@@ -85,11 +81,7 @@
 .button__light-theme::before {
 	// Positioning
 	position: absolute;
-	top: calc(50% - 0.4rem);
-	right: calc(50% - 0.4rem);
-
-	// Box model
-	display: inline-block;
+	transform: translate(-50%, -50%);
 
 	// Typography
 	font: var(--fa-font-solid);
@@ -105,11 +97,7 @@
 .button__hamburger::before {
 	// Positioning
 	position: absolute;
-	top: calc(50% - 0.4rem);
-	right: calc(50% - 0.36rem);
-
-	// Box model
-	display: inline-block;
+	transform: translate(-50%, -50%);
 
 	// Typography
 	font: var(--fa-font-solid);
