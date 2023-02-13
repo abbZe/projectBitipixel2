@@ -207,7 +207,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.active {
+.active-button {
   background-color: #1a1a1a;
   color: #f1f1f1;
 }
@@ -252,6 +252,7 @@ html {
 }
 .about__content img {
   width: 100vw;
+  border-radius: 0.4rem;
 }
 
 .about__text-container {
@@ -272,9 +273,71 @@ html {
   text-align: right;
 }
 
+.gallery {
+  padding-inline: 0.5rem;
+}
+
+.gallery__title {
+  margin-bottom: 0.5rem;
+}
+
+.gallery__title.title-right::after {
+  width: 11.5rem;
+}
+
+.gallery__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.previews-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.preview-item {
+  position: relative;
+}
+
+.preview-item::after {
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  content: "";
+  background-color: #f1f1f1;
+  opacity: 0.6;
+}
+
+.preview-item.active-preview::after {
+  opacity: 0;
+}
+
+.preview-item img {
+  width: 2rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+}
+
+.gallery__active-photo {
+  width: 100vw;
+  border-radius: 0.4rem;
+}
+
 .title-left {
   position: relative;
-  width: 100vw;
   background-color: #f1f1f1;
   font-family: "Press Start 2P", cursive;
   font-size: 1rem;
@@ -286,26 +349,24 @@ html {
   right: 0;
   width: 4.5rem;
   height: 0.1em;
-  margin-right: 1rem;
   background-color: #1a1a1a;
   content: "";
 }
 
 .title-right {
   position: relative;
-  width: 100vw;
   background-color: #f1f1f1;
   font-family: "Press Start 2P", cursive;
   font-size: 1rem;
   font-weight: 400;
+  text-align: right;
 }
 .title-right::after {
   position: absolute;
   top: 0.5em;
-  right: 0;
+  left: 0;
   width: 4.5rem;
   height: 0.1em;
-  margin-right: 1rem;
   background-color: #1a1a1a;
   content: "";
 }

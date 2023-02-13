@@ -2,9 +2,6 @@
 	// Positioning
 	position: relative;
 
-	// Box model
-	width: 100vw;
-
 	// Visual
 	background-color: $white;
 
@@ -22,7 +19,6 @@
 		// Box model
 		width: 4.5rem;
 		height: 0.1em;
-		margin-right: 1rem;
 		
 		// Visual
 		background-color: $black;
@@ -34,9 +30,6 @@
 	// Positioning
 	position: relative;
 
-	// Box model
-	width: 100vw;
-
 	// Visual
 	background-color: $white;
 
@@ -44,17 +37,17 @@
 	font-family: $titleFont;
 	font-size: 1rem;
 	font-weight: 400;
+	text-align: right;
 
 	&::after {
 		// Positioning
 		position: absolute;
 		top: 0.5em;
-		right: 0;
+		left: 0;
 
 		// Box model
 		width: 4.5rem;
 		height: 0.1em;
-		margin-right: 1rem;
 		
 		// Visual
 		background-color: $black;
