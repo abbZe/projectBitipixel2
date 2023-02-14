@@ -34,11 +34,6 @@ html {
 	background-color: none;
 }
 
-.hidden {
-	// Visual
-	display: none;
-}
-
 .mobile-only {
 	@include atDesktopU {
 		// Box model

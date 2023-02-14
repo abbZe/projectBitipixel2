@@ -17,13 +17,12 @@
 
 .main-header__logo {
 	// Box model
-	display: flex;
-	flex-direction: column;
+	display: block;
 }
 
 .main-header__logo .logo {
 	// Box model
-	padding-top: 0.2rem; // empty space under font compensation
+	padding-top: 0.2rem; // empty space under the font compensation
 
 	// Typography
 	font-family: $titleFont;
@@ -34,7 +33,13 @@
 	text-transform: uppercase;
 
 	@include atDesktopU {
+		// Typography
 		font-size: 1.5rem;
+
+		&:hover {
+			// Visual
+			opacity: .7;
+		}
 	}
 }
 
@@ -70,6 +75,12 @@
 	// Visual
 	background-color: $lightGray;
 	color: $black;
+
+	@include atDesktopU {
+		&:hover {
+			opacity: .7;
+		}
+	}
 }
 
 .button__dark-theme::before {

@@ -30,10 +30,10 @@ body.dark-theme .main-footer {
 
 body.dark-theme .active-button {
 	// Visual
-	background-color: $white;
+	background-color: $white !important;
 
 	// Typography
-	color: $black;
+	color: $black !important;
 }
 
 body.dark-theme .button__light-theme,

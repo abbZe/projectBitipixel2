@@ -29,6 +29,12 @@
 	// Visual
 	background-color: $lightGray;
 	color: $black;
+
+	@include atDesktopU {
+		&:hover {
+			opacity: .7;
+		}
+	}
 }
 
 .main-footer__socials-item a::before {

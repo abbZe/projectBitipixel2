@@ -47,6 +47,12 @@
 .preview-item {
 	// Positioning
 	position: relative;
+
+	@include atDesktopU {
+		&:hover {
+			opacity: .7;
+		}
+	}
 }
 
 .preview-item::after {
