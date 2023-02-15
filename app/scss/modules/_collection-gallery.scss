@@ -1,0 +1,152 @@
+.collection-gallery {
+	// Box model
+	margin-bottom: $defaultMargin;
+	padding-inline: $defaultPadding;
+}
+
+.collection-gallery h2 {
+	// Positioning
+	position: relative;
+	
+	// Box model
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+	// Typography
+	font-family: $titleFont;
+	font-size: 1rem;
+}
+
+.collection-gallery__list {
+	// Box model
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: .5rem;
+
+	// Typography
+	list-style: none;
+}
+
+figcaption {
+	// Typography
+	font-weight: 400;
+	line-height: 1.2rem;
+}
+
+.collection-gallery__item h3 {
+	// Typography
+	font-family: $mainFont;
+}
+
+//--- CARDS
+.collection-gallery__item {
+	// Box model
+	width: 19rem;
+	height: 26rem;
+	perspective: 1000px;
+	margin: 0;
+	padding: 0;
+	
+	@include atDesktopU {
+		// Box model
+		width: 9rem;
+		height: 12rem;
+	}
+}
+
+.card {
+	// Positioning
+	position: relative;
+
+	// Box model
+	height: 100%;
+	width: 100%;
+
+	// Visual
+	transition: transform .25s;
+	transform-style: preserve-3d;
+}
+
+.collection-gallery__item:hover > .card {
+	// Visual
+	cursor: pointer;
+	transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+	// Positioning
+	position: absolute;
+
+	// Box model
+	height: 100%;
+	width: 100%;
+	border-radius: 1rem;
+	border: 8px solid #1a1a1a1f;
+
+	// Visual
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.card__front {
+	// Box model
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	// Typography
+	text-align: center;
+
+	// Visual
+	background-color: #e7e7e7;
+}
+
+.card__front img {
+	// Box model
+	width: 24rem;
+	
+	// Positioning
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(-1%, 29%);
+}
+
+.card__front h3 {
+	// Positioning
+	position: absolute;
+
+	// Box model
+	display: flex;
+	padding: 1rem;
+	border-radius: 0.6rem;
+
+	// Typography
+	font-size: 2rem;
+	color: $black;
+
+	@include atDesktopU {
+		// Typography
+		font-size: 0.9rem;
+	}
+}
+
+.card__back {
+	// Box model
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	
+	// Typography
+	font-size: 16px;
+	line-height: 20px;
+	
+	// Visual
+	background-color: #f1f1f1;
+	transform: rotateY(180deg);
+	overflow-y: scroll;
+}

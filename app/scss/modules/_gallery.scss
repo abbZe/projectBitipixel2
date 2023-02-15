@@ -48,6 +48,10 @@
 	// Positioning
 	position: relative;
 
+	// Visual
+	cursor: pointer;
+	overflow: hidden;
+
 	@include atDesktopU {
 		&:hover {
 			opacity: .7;
