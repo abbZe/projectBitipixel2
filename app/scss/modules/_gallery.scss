@@ -12,6 +12,7 @@
 .gallery__title.title-right::after {
 	// Box model
 	width: 11.5rem;
+
 	@include atDesktopU {
 		width: 35rem;
 	}
