@@ -1,71 +1,71 @@
 .title-left {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 
-	// Visual
-	background-color: $white;
+  // Visual
+  background-color: $white;
 
-	// Typography
-	font-family: $titleFont;
-	font-size: 1rem;
-	font-weight: 400;
+  // Typography
+  font-family: $titleFont;
+  font-size: 1rem;
+  font-weight: 400;
 
-	&::after {
-		// Positioning
-		position: absolute;
-		top: 0.5em;
-		right: 0;
+  &::after {
+    // Positioning
+    position: absolute;
+    top: 0.5em;
+    right: 0;
 
-		// Box model
-		width: 4.5rem;
-		height: 0.1em;
-		
-		// Visual
-		background-color: $black;
-		content: "";
+    // Box model
+    width: 4.5rem;
+    height: 0.1em;
+    
+    // Visual
+    background-color: $black;
+    content: "";
 
-		@include atDesktopU {
-			width: 24rem;
-		}
-	}
-	@include atDesktopU {
-		font-size: 1.5rem;
-	}
+    @include atDesktopU {
+      width: 24rem;
+    }
+  }
+  @include atDesktopU {
+    font-size: 1.5rem;
+  }
 }
 
 .title-right {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 
-	// Visual
-	background-color: $white;
+  // Visual
+  background-color: $white;
 
-	// Typography
-	font-family: $titleFont;
-	font-size: 1rem;
-	font-weight: 400;
-	text-align: right;
+  // Typography
+  font-family: $titleFont;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
 
-	&::after {
-		// Positioning
-		position: absolute;
-		top: 0.5em;
-		left: 0;
+  &::after {
+    // Positioning
+    position: absolute;
+    top: 0.5em;
+    left: 0;
 
-		// Box model
-		width: 4.5rem;
-		height: 0.1em;
-		
-		// Visual
-		background-color: $black;
-		content: "";
+    // Box model
+    width: 4.5rem;
+    height: 0.1em;
+    
+    // Visual
+    background-color: $black;
+    content: "";
 
-		@include atDesktopU {
-			width: 35rem;
-		}
-	}
+    @include atDesktopU {
+      width: 35rem;
+    }
+  }
 
-	@include atDesktopU {
-		font-size: 1.5rem;
-	}
+  @include atDesktopU {
+    font-size: 1.5rem;
+  }
 }

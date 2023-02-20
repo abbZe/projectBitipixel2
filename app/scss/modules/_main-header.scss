@@ -1,147 +1,147 @@
 .main-header {
-	// Positioning
-	position: sticky;
-	top: -1px;
-	z-index: 999;
+  // Positioning
+  position: sticky;
+  top: -1px;
+  z-index: 999;
 
-	// Box model
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: $defaultPadding;
-	margin-bottom: $defaultMargin;
+  // Box model
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $defaultPadding;
+  margin-bottom: $defaultMargin;
 
-	// Visual
-	background-color: #ececec;
+  // Visual
+  background-color: #ececec;
 }
 
 .main-header__logo {
-	// Box model
-	display: block;
+  // Box model
+  display: block;
 }
 
 .main-header__logo .logo {
-	// Box model
-	padding-top: 0.2rem; // empty space under the font compensation
+  // Box model
+  padding-top: 0.2rem; // empty space under the font compensation
 
-	// Typography
-	font-family: $titleFont;
-	color: $black;
-	font-size: 1.3rem;
-	line-height: 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
+  // Typography
+  font-family: $titleFont;
+  color: $black;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
 
-	@include atDesktopU {
-		// Typography
-		font-size: 1.5rem;
+  @include atDesktopU {
+    // Typography
+    font-size: 1.5rem;
 
-		&:hover {
-			// Visual
-			opacity: .7;
-		}
-	}
+    &:hover {
+      // Visual
+      opacity: .7;
+    }
+  }
 }
 
 .main-header__title {
-	// Typography
-	font-size: 0.4rem;
+  // Typography
+  font-size: 0.4rem;
 
-	@include atDesktopU {
-		// Typography
-		font-size: 0.7rem;
-	}
+  @include atDesktopU {
+    // Typography
+    font-size: 0.7rem;
+  }
 }
 
 .main-header__buttons {
-	// Box model
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	gap: 0.5rem;
+  // Box model
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .button__light-theme,
 .button__dark-theme,
 .button__hamburger {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 
-	// Box model
-	border: none;
-	border-radius: 50%;
-	padding: 1rem;
+  // Box model
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
 
-	// Visual
-	background-color: $lightGray;
-	color: $black;
+  // Visual
+  background-color: $lightGray;
+  color: $black;
 
-	@include atDesktopU {
-		&:hover {
-			opacity: .7;
-		}
-	}
+  @include atDesktopU {
+    &:hover {
+      opacity: .7;
+    }
+  }
 }
 
 .button__dark-theme::before {
-	// Positioning
-	position: absolute;
-	transform: translate(-50%, -50%);
+  // Positioning
+  position: absolute;
+  transform: translate(-50%, -50%);
 
-	// Box model
-	padding: 0.5rem;
+  // Box model
+  padding: 0.5rem;
 
-	// Typography
-	font: var(--fa-font-solid);
-	font-size: 0.9rem;
+  // Typography
+  font: var(--fa-font-solid);
+  font-size: 0.9rem;
 
-	// Visual
-	content: "\f186";
-	cursor: pointer;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
+  // Visual
+  content: "\f186";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .button__light-theme::before {
-	// Positioning
-	position: absolute;
-	transform: translate(-50%, -50%);
+  // Positioning
+  position: absolute;
+  transform: translate(-50%, -50%);
 
-		// Box model
-		padding: 0.5rem;
+    // Box model
+    padding: 0.5rem;
 
-	// Typography
-	font: var(--fa-font-solid);
-	font-size: 0.9rem;
+  // Typography
+  font: var(--fa-font-solid);
+  font-size: 0.9rem;
 
-	// Visual
-	content: "\f185";
-	cursor: pointer;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
+  // Visual
+  content: "\f185";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .button__hamburger::before {
-	// Positioning
-	position: absolute;
-	transform: translate(-50%, -50%);
+  // Positioning
+  position: absolute;
+  transform: translate(-50%, -50%);
 
-		// Box model
-		padding: 0.5rem;
+    // Box model
+    padding: 0.5rem;
 
-	// Typography
-	font: var(--fa-font-solid);
-	font-size: 0.9rem;
+  // Typography
+  font: var(--fa-font-solid);
+  font-size: 0.9rem;
 
-	// Visual
-	content: "\f0c9";
-	cursor: pointer;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
+  // Visual
+  content: "\f0c9";
+  cursor: pointer;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .active-button {
-	// Visual
-	background-color: $black;
-	color: $white;
+  // Visual
+  background-color: $black;
+  color: $white;
 }

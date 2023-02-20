@@ -1,72 +1,72 @@
 .dark-theme {
-	// Typography
-	color: $white !important;
+  // Typography
+  color: $white !important;
 
-	// Visual
-	background-color: $black !important;
+  // Visual
+  background-color: $black !important;
 }
 
 body.dark-theme a {
-	// Visual
-	color: $white !important;
+  // Visual
+  color: $white !important;
 }
 
 body.dark-theme .title-right, 
 body.dark-theme .title-left {
-	// Visual
-	background-color: $black !important;
+  // Visual
+  background-color: $black !important;
 
-	&::after {
-		// Visual
-		background-color: $white !important;
-	}
+  &::after {
+    // Visual
+    background-color: $white !important;
+  }
 }
 
 body.dark-theme .main-header,
 body.dark-theme .main-footer {
-	// Visual
-	background-color: #262626;
+  // Visual
+  background-color: #262626;
 }
 
 body.dark-theme .active-button {
-	// Visual
-	background-color: $white !important;
+  // Visual
+  background-color: $white !important;
 
-	// Typography
-	color: $black !important;
+  // Typography
+  color: $black !important;
 }
 
 body.dark-theme .button__light-theme,
 body.dark-theme .button__hamburger {
-	// Visual
-	background-color: $black;
+  // Visual
+  background-color: $black;
 
-	// Typography
-	color: $white;
+  // Typography
+  color: $white;
 }
 
 body.dark-theme .mobile-nav {
-	// Visual
-	background-color: $black
-	;
+  // Visual
+  background-color: $black
+  ;
 }
 
 body.dark-theme .main-footer .main-footer__socials-item a  {
-	// Visual
-	background-color: $black;
+  // Visual
+  background-color: $black;
 }
 
 body.dark-theme .card__back {
-	// Visual
-	background-color: #363636;
+  // Visual
+  background-color: #363636;
 }
 
 body.dark-theme .card__front {
-	// Visual
-	background-color: #363636;
+  // Visual
+  background-color: #363636;
 }
 
 body.dark-theme .card__front h3 {
-	// Visual
-	color: #ececec;
+  // Visual
+  color: #ececec;
 }

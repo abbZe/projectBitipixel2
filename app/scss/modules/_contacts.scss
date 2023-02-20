@@ -1,102 +1,102 @@
 .contacts {
-	// Box model
-	padding-inline: $defaultPadding;
+  // Box model
+  padding-inline: $defaultPadding;
 }
 
 .contacts__title {
-	// Box model
-	margin-bottom: 0.5rem;
+  // Box model
+  margin-bottom: 0.5rem;
 }
 
 .contacts__subtitle {
-	// Box model
-	margin-bottom: 0.5rem;
+  // Box model
+  margin-bottom: 0.5rem;
 
-	// Typography
-	font-size: 0.5rem;
+  // Typography
+  font-size: 0.5rem;
 
-	@include atDesktopU {
-		// Typography
-		font-size: 0.7rem;
+  @include atDesktopU {
+    // Typography
+    font-size: 0.7rem;
 
-	}
+  }
 }
 
 .contacts__content {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 }
 
 .contacts__image {
-	// Box model
-	width: 100%;
-	height: auto;
-	border-radius: 0.4rem;
+  // Box model
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
 
-	// Visual
-	transform: scaleX(-1);
+  // Visual
+  transform: scaleX(-1);
 }
 
 
 .contacts__list {
-	// Positioning
-	position: absolute;
-	top: 50%;
-	left: 0.5rem;
-	transform: translate(0, -50%);
+  // Positioning
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translate(0, -50%);
 
-	// Box model
-	display: flex;
-	flex-direction: column;
+  // Box model
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__item {
-	// Box model
-	width: 33.3vw;
+  // Box model
+  width: 33.3vw;
 
-	// Typography
-	list-style: none;
-	color: $white;
+  // Typography
+  list-style: none;
+  color: $white;
 }
 
 .contacts__item a {
-	// Typography
-	color: $white;
-	text-decoration: none;
+  // Typography
+  color: $white;
+  text-decoration: none;
 }
 
 .contacts__item:not(:last-child) {
-	// Box model
-	margin-bottom: 0.5rem;
+  // Box model
+  margin-bottom: 0.5rem;
 
-	@include atDesktopU {
-		// Box model
-		margin-bottom: 1.3rem;
-	}
+  @include atDesktopU {
+    // Box model
+    margin-bottom: 1.3rem;
+  }
 }
 
 .contacts__item h3 {
-	// Box model
-	margin-bottom: 0.25rem;
+  // Box model
+  margin-bottom: 0.25rem;
 
-	// Typography
-	font-size: 0.7rem;
+  // Typography
+  font-size: 0.7rem;
 
-	@include atDesktopU {
-		// Typography
-		font-size: 1.1rem;
-		line-height: 1rem;
-	}
+  @include atDesktopU {
+    // Typography
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
 }
 
 .contacts__item p {
-	// Typography
-	font-size: 0.4em;
-	line-height: 1.3em;
+  // Typography
+  font-size: 0.4em;
+  line-height: 1.3em;
 
-	@include atDesktopU {
-		// Typography
-		font-size: 0.9rem;
-		line-height: 1rem;
-	}
+  @include atDesktopU {
+    // Typography
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
 }

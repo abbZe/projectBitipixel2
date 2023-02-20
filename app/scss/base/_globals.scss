@@ -1,18 +1,18 @@
 html {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 
-	// Typography
-	font-family: $mainFont;
-	color: $black;
-	font-size: 4.75vw;
+  // Typography
+  font-family: $mainFont;
+  color: $black;
+  font-size: 4.75vw;
 
-	// Visual
-	background-color: $white;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+  // Visual
+  background-color: $white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 
-	@include atTabletU {
+  @include atTabletU {
     // typography
     font-size: 4.75vw;
   }
@@ -29,24 +29,24 @@ html {
 }
 
 .button {
-	// Box model
-	border: none;
-	background-color: none;
+  // Box model
+  border: none;
+  background-color: none;
 }
 
 .mobile-only {
-	@include atDesktopU {
-		// Box model
-		display: none !important;
-	}
+  @include atDesktopU {
+    // Box model
+    display: none !important;
+  }
 }
 
 .desktop-only {
-	// Box model
-	display: none !important;
+  // Box model
+  display: none !important;
 
-	@include atDesktopU {
-		// Box model
-		display: block !important;
-	}
+  @include atDesktopU {
+    // Box model
+    display: block !important;
+  }
 }

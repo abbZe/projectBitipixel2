@@ -1,106 +1,106 @@
 .gallery {
-	// Box model
-	padding-inline: $defaultPadding;
-	margin-bottom: $defaultMargin;
+  // Box model
+  padding-inline: $defaultPadding;
+  margin-bottom: $defaultMargin;
 }
 
 .gallery__title {
-	// Box model
-	margin-bottom: 0.5rem;
+  // Box model
+  margin-bottom: 0.5rem;
 }
 
 .gallery__title.title-right::after {
-	// Box model
-	width: 11.5rem;
+  // Box model
+  width: 11.5rem;
 
-	@include atDesktopU {
-		width: 35rem;
-	}
+  @include atDesktopU {
+    width: 35rem;
+  }
 }
 
 .gallery__switcher {
-	// Box model
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
+  // Box model
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
-	@include atDesktopU {
-		gap: 0.5rem;
-	}
+  @include atDesktopU {
+    gap: 0.5rem;
+  }
 }
 
 .previews-list {
-	// Box model
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  // Box model
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-	// Typography
-	list-style: none;
+  // Typography
+  list-style: none;
 
-	@include atDesktopU {
-		// Box model
-		gap: 0.5rem;
-		flex-wrap: nowrap;
-	}
+  @include atDesktopU {
+    // Box model
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
 }
 
 .preview-item {
-	// Positioning
-	position: relative;
+  // Positioning
+  position: relative;
 
-	// Visual
-	cursor: pointer;
-	overflow: hidden;
+  // Visual
+  cursor: pointer;
+  overflow: hidden;
 
-	@include atDesktopU {
-		&:hover {
-			opacity: .7;
-		}
-	}
+  @include atDesktopU {
+    &:hover {
+      opacity: .7;
+    }
+  }
 }
 
 .preview-item::after {
-	// Positioning
-	position: absolute;
-	top: 0;
-	
-	// Box model
-	width: 2rem;
-	height: 1rem;
-	border-radius: 0.2rem;
+  // Positioning
+  position: absolute;
+  top: 0;
+  
+  // Box model
+  width: 2rem;
+  height: 1rem;
+  border-radius: 0.2rem;
 
-	// Visual
-	content: '';
-	background-color: $white;
-	opacity: 0.6;
+  // Visual
+  content: '';
+  background-color: $white;
+  opacity: 0.6;
 
-	@include atDesktopU {
-		// Box model
-		width: 7rem;
-		height: 4rem;
-	}
+  @include atDesktopU {
+    // Box model
+    width: 7rem;
+    height: 4rem;
+  }
 }
 
 .preview-item.active-preview::after {
-	// Visual
-	opacity: 0;
+  // Visual
+  opacity: 0;
 }
 
 .preview-item img {
-	// Box model
-	width: 2rem;
-	height: 1rem;
-	border-radius: 0.2rem;
+  // Box model
+  width: 2rem;
+  height: 1rem;
+  border-radius: 0.2rem;
 
-	@include atDesktopU {
-		width: 7rem;
-		height: 4rem;
-	}
+  @include atDesktopU {
+    width: 7rem;
+    height: 4rem;
+  }
 }
 
 .gallery__active-photo {
-	// Box model
-	width: 100vw;
-	border-radius: 0.4rem;
+  // Box model
+  width: 100vw;
+  border-radius: 0.4rem;
 }
